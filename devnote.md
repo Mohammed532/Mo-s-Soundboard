@@ -4,7 +4,7 @@
 
 ### 1.0 Release
 
-- [ ] Landing page
+- [x] Landing page
 - [ ] Soundboard page
 - [ ] Audio files (local storage)
 - [ ] Setup Firebase Hosting
