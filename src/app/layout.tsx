@@ -7,7 +7,12 @@ const funnelDisplay = Funnel_Display({subsets: ['latin']})
 export const metadata: Metadata = {
   title: "Mo's Soundboard",
   description: "Soundboard App for playing goofy sounds (Dev by Mohammed Akinbayo)",
-  authors: {name: 'Mohammed Akinbayo', url: 'https://mohammed532.github.io/'}
+  authors: {name: 'Mohammed Akinbayo', url: 'https://mohammed532.github.io/'},
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
 };
 
 export default function RootLayout({
