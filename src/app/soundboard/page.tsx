@@ -24,19 +24,23 @@ export default function Soundboard(){
 
 function Soundbit({ title, sound_path }: SoundbitProps){
     const [isPlaying, setIsPlaying] = useState(false);
-    const [play] = useSound(sound_path, {
+    const [play, {stop}] = useSound(sound_path, {
         onend: () => setIsPlaying(false),
     });
 
     let handleClick: React.MouseEventHandler<HTMLButtonElement> = (e) => {
-        play();
-        setIsPlaying(true);
-        console.log('hit');
+        if (isPlaying){
+            stop();
+            setIsPlaying(false);
+        } else {
+            play();
+            setIsPlaying(true);
+        }
     }
 
     return(
         <div>
-            <button className="w-24 h-24 bg-base-300 rounded-lg" onClick={handleClick}>{isPlaying}</button>
+            <button className={`w-24 h-24 ${isPlaying ? 'bg-primary' : 'bg-base-300'} rounded-lg`} onClick={handleClick}></button>
             <p className="text-center text-sm pt-1">{title}</p>
         </div>
     )
