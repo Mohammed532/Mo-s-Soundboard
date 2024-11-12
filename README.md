@@ -1,4 +1,11 @@
-# Mo's Soundboard
+<p align="center">
+    <img width="1334" src="https://github.com/Mohammed532/Mo-s-Soundboard/blob/main/README.png" alt="Mo's Soundboard Logo">
+</p>
 
-Goofy lil project, hopefully won't take long.
-Just wanted to create an app for playing dumb sound effects.
+<h1 align="center">Mo's Soundboard</h1>
+
+Goofy lil project for playing sound effects I find funny.
+
+## Aren't there already many soundboard apps?
+
+Yes. I wanted to make my own. Just cause.
