@@ -28,7 +28,7 @@ function Soundbit({ title, sound_path }: SoundbitProps){
         onend: () => setIsPlaying(false),
     });
 
-    let handleClick: React.MouseEventHandler<HTMLButtonElement> = (e) => {
+    const handlePlayback: React.MouseEventHandler<HTMLButtonElement> = () => {
         if (isPlaying){
             stop();
             setIsPlaying(false);
@@ -40,7 +40,7 @@ function Soundbit({ title, sound_path }: SoundbitProps){
 
     return(
         <div className="w-28 flex flex-col justify-items-center items-center">
-            <button className={`w-24 h-24 ${isPlaying ? 'bg-primary' : 'bg-base-300'} rounded-lg my-auto`} onClick={handleClick}></button>
+            <button className={`w-24 h-24 ${isPlaying ? 'bg-primary' : 'bg-base-300'} rounded-lg my-auto`} onClick={handlePlayback}></button>
             <p className="text-center text-sm text-balance break-all whitespace-normal pt-1">{title}</p>
         </div>
     )
