@@ -39,9 +39,9 @@ function Soundbit({ title, sound_path }: SoundbitProps){
     }
 
     return(
-        <div>
-            <button className={`w-24 h-24 ${isPlaying ? 'bg-primary' : 'bg-base-300'} rounded-lg`} onClick={handleClick}></button>
-            <p className="text-center text-sm pt-1">{title}</p>
+        <div className="w-28 flex flex-col justify-items-center items-center">
+            <button className={`w-24 h-24 ${isPlaying ? 'bg-primary' : 'bg-base-300'} rounded-lg my-auto`} onClick={handleClick}></button>
+            <p className="text-center text-sm text-balance break-all whitespace-normal pt-1">{title}</p>
         </div>
     )
 }
