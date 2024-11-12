@@ -7,5 +7,9 @@
 - [x] Landing page
 - [x] Soundboard page
 - [x] Audio files (local storage)
-- [ ] Setup Firebase Hosting
-- [ ] Setup CI/CD (for possible further dev, prolly won't happen)
+- [x] Setup Firebase Hosting
+- [x] Setup CI/CD (for possible further dev, prolly won't happen)
+
+## Building And Deploying
+
+CI/CD is setup, so just need to push to the main repository
