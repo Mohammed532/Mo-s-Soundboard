@@ -1,5 +1,5 @@
 <p align="center">
-    <img width="1334" src="https://github.com/Mohammed532/Mo-s-Soundboard/blob/main/README.png" alt="Mo's Soundboard Logo">
+    <img width="1334" src="https://github.com/Mohammed532/Mo-s-Soundboard/blob/main/src/app/res/imgs/README.png" alt="Mo's Soundboard Logo">
 </p>
 
 <h1 align="center">Mo's Soundboard</h1>
